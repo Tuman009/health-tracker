@@ -17,11 +17,26 @@ Whether you’re aiming to stay active, eat healthier, or keep an eye on key hea
 
 ## ⚙️ Installation Guide
 
-Follow the steps below to run the project locally on your machine:
-
-### 1. Clone the Repository
+Follow the steps below to run the project locally:
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/Tuman009/health-tracker.git
 cd health-tracker
 
+# 2. Install dependencies
+npm install
+# or
+yarn install
+
+# 3. Set up environment variables
+cp .env.example .env.local
+# Then edit the .env.local file and add your MongoDB URI, JWT secret, etc.
+
+# 4. Start the development server
+npm run dev
+# or
+yarn dev
+
+# 5. Open your browser
+http://localhost:3000
